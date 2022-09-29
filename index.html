@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="card" id="card">
+        <div class="front">
+          <div class="logo-marca" id="logo-marca"></div>
+          <img src="./image/chip-tarjeta.png" alt="" class="chip-card" />
+          <div class="data">
+            <div class="group" id="number">
+              <p class="label">Número tarjeta</p>
+              <p class="number">#### #### #### ####</p>
+            </div>
+            <div class="flexbox">
+              <div class="group" id="name">
+                <p class="label">Nombre de la tarjeta</p>
+                <p class="name">Jhon Doe</p>
+              </div>
+              <div class="group" id="expiration">
+                <p class="label">Expiración</p>
+                <p class="expiration">
+                  <span class="month">MM</span>/ <span class="year">AA</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back">
+          <div class="magnetic-bar"></div>
+          <div class="data">
+            <div class="group" id="signature">
+              <p class="label">Firma</p>
+              <div class="signature"><p></p></div>
+            </div>
+            <div class="group" id="ccv">
+              <p class="label">CCV</p>
+              <p class="ccv"></p>
+            </div>
+          </div>
+          <p class="legend">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo unde,
+          </p>
+          <a href="#" class="link-banco">www.tubanco.com</a>
+        </div>
+      </section>
+      <div class="container-btn">
+        <button class="btn-open-form" id="btn-open-form">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+
+      <form action="" id="form-card" class="form-card">
+        <div class="group">
+          <label for="input-number">Número Tarjeta</label>
+          <input
+            type="text"
+            id="inputNumber"
+            maxlength="19"
+            autocomplete="off"
+          />
+          <label for="input-name">Nombre</label>
+          <input type="text" id="inputName" maxlength="19" autocomplete="off" />
+          <div class="flexbox">
+            <div class="group expira">
+              <label for="selectMonth">Expiracion</label>
+              <div class="flexbox">
+                <div class="group-select">
+                  <select name="mes" id="selectMonth">
+                    <option disabled selected>Mes</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="group-select">
+                  <select name="year" id="selectYear">
+                    <option disabled selected>Year</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="group ccv">
+              <label for="inputCCV">CCV</label>
+              <input type="text" id="inputCCV" maxlength="3" />
+            </div>
+          </div>
+          <button type="submit" class="btn-send">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
